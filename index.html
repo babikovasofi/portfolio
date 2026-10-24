@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>София Бабикова — портфолио</title>
+<meta name="description" content="AI-инженер и full-stack разработчик. Проекты, хакатоны, стажировки.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f7f7f5;
+    --card: #ffffff;
+    --text: #1c1c1e;
+    --muted: #6b6b70;
+    --line: #e4e4e0;
+    --accent: #3b5bdb;
+    --accent-soft: #edf1ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141416;
+      --card: #1d1d20;
+      --text: #ececee;
+      --muted: #9a9aa1;
+      --line: #2e2e33;
+      --accent: #8ea6ff;
+      --accent-soft: #232a45;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 48px 16px 80px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  header h1 { font-size: 40px; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .role { font-size: 18px; font-weight: 600; color: var(--accent); margin: 0 0 14px; }
+  .lead { color: var(--muted); margin: 0 0 10px; }
+  .contacts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+  .chip {
+    display: inline-block; padding: 6px 12px; border-radius: 999px;
+    background: var(--accent-soft); color: var(--accent); font-size: 14px; font-weight: 500;
+  }
+
+  nav { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); margin: 32px -16px 0; padding: 10px 16px; display: flex; gap: 18px; overflow-x: auto; font-size: 14px; font-weight: 500; }
+  nav a { color: var(--muted); white-space: nowrap; }
+
+  section > h2 { font-size: 26px; margin: 48px 0 16px; letter-spacing: -0.01em; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 22px 22px 18px; margin-bottom: 18px;
+  }
+  .card h3 { font-size: 19px; margin: 0 0 4px; line-height: 1.35; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0 0 12px; }
+  .card p { margin: 0 0 10px; }
+  .card ul { margin: 0 0 12px; padding-left: 20px; }
+  .card li { margin-bottom: 4px; }
+  .badge { display: inline-block; font-size: 13px; font-weight: 600; padding: 2px 10px; border-radius: 6px; background: var(--accent-soft); color: var(--accent); margin-left: 6px; vertical-align: 2px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 14px; }
+  .btn { display: inline-block; padding: 7px 14px; border-radius: 8px; border: 1px solid var(--line); font-size: 14px; font-weight: 500; color: var(--text); }
+  .btn:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+  .media-label { font-size: 14px; font-weight: 600; color: var(--muted); margin: 16px 0 8px; }
+  .video, .pdf { width: 100%; border-radius: 10px; border: 1px solid var(--line); background: #000; display: block; }
+  .video-embed { position: relative; padding-top: 56.25%; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); }
+  .video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .pdf { height: 480px; background: var(--bg); }
+  .proof { display: inline-block; margin-top: 8px; }
+  .proof img { max-width: 100%; width: 360px; border-radius: 8px; border: 1px solid var(--line); display: block; }
+  .proof span { display: block; font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+  footer { margin-top: 56px; color: var(--muted); font-size: 14px; text-align: center; }
+  @media (max-width: 600px) {
+    header h1 { font-size: 32px; }
+    .pdf { height: 260px; }
+    .card { padding: 18px 16px 14px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>София Бабикова</h1>
+  <p class="role">AI-инженер · Full-stack разработчик</p>
+  <p class="lead">Студентка ОмГТУ, «Программная инженерия» — «Индустриальная разработка программных продуктов», Омск.</p>
+  <p class="lead">Делаю продукты от идеи до релиза: веб, мобильные приложения, RAG-системы на LLM. Учусь на «отлично», получаю повышенную стипендию. За 2026 год — 4 победы на хакатонах, доклад на всероссийской конференции.</p>
+  <div class="contacts">
+    <a class="chip" href="https://t.me/Sofia_Babikova">Telegram @Sofia_Babikova</a>
+    <a class="chip" href="https://github.com/babikovasofi">GitHub babikovasofi</a>
+    <a class="chip" href="mailto:babikova.sofiya@bk.ru">babikova.sofiya@bk.ru</a>
+  </div>
+</header>
+
+<nav>
+  <a href="#experience">Опыт</a>
+  <a href="#projects">Личные проекты</a>
+  <a href="#hackathons">Хакатоны</a>
+  <a href="#science">Наука</a>
+  <a href="#activity">Активность</a>
+</nav>
+
+<section id="experience">
+  <h2>Опыт</h2>
+
+  <div class="card">
+    <h3>Стажировка — ООО «КРАСАВЧИК»</h3>
+    <p class="meta">01.07 – 31.08.2026 · 176 часов · программа ТОП-ИТ</p>
+    <p>Программа «Разработка ПО и работа в команде: от проектирования до релиза». Участвовала в кейсе <b>«Арбитр»</b> — мобильное приложение для автоматической оценки публичных выступлений.</p>
+    <a class="proof" href="files/krasavchik-praktika.jpg" target="_blank"><img src="files/krasavchik-praktika.jpg" alt="Справка о прохождении стажировки" loading="lazy"><span>Справка о стажировке</span></a>
+  </div>
+
+  <div class="card">
+    <h3>ИТ-лаборатория «Проектим» — выпускница 2026</h3>
+    <p><b>ML-инженер на проекте «Арбитр»</b> — мобильное приложение для автоматической оценки публичных выступлений.</p>
+    <div class="links">
+      <a class="btn" href="https://www.rustore.ru/catalog/app/ru.pmifi.arbitrator" target="_blank">«Арбитр» в RuStore</a>
+      <a class="btn" href="https://www.loom.com/share/fb8e9c2d084544e4b06c6db54d9f0c8b" target="_blank">Видео о проекте в Loom</a>
+    </div>
+    <p class="media-label">О проекте</p>
+    <div class="video-embed"><iframe src="https://www.loom.com/embed/fb8e9c2d084544e4b06c6db54d9f0c8b" allowfullscreen loading="lazy"></iframe></div>
+    <p class="media-label">Что я сделала на проекте</p>
+    <video class="video" src="files/arbiter-my-work.mp4" controls preload="metadata" playsinline></video>
+    <a class="proof" href="files/proektim.jpg" target="_blank"><img src="files/proektim.jpg" alt="Сертификат выпускника ИТ-лаборатории «Проектим»" loading="lazy"><span>Сертификат выпускника</span></a>
+  </div>
+
+  <div class="card">
+    <h3>Учебная практика — Effective · Spaceship Mission <span class="badge">Готово к продакшену</span></h3>
+    <p>Команда Qubit (2 человека): своя игра <b>Spaceship Mission</b>. На демо-дне — номинация <b>«Готово к продакшену»</b> и приз за лучший проект по версии Студенческой IT-лаборатории.</p>
+    <p><b>Spaceship Mission</b> — мобильный 2D point-and-click квест под ОС Аврора. Корабль в критическом состоянии: игрок восстанавливает его по крупицам, решая головоломки в 4 локациях, и в финале воссоединяется с экипажем.</p>
+    <ul>
+      <li>6 мини-игр: пятнашки, переливание жидкостей, лазеры с зеркалами, трубопровод, раннер и другие.</li>
+      <li>10 комнат</li>
+      <li><b>Стек:</b> Godot Engine 4, GDScript, 2D пиксель-арт, GitHub.</li>
+    </ul>
+    <p class="media-label">Презентация игры · <a href="files/spaceship-mission-presentation.pdf" target="_blank">открыть PDF</a></p>
+    <iframe class="pdf" src="files/spaceship-mission-presentation.pdf" loading="lazy" title="Презентация Spaceship Mission"></iframe>
+    <a class="proof" href="files/effective-spaceship.jpg" target="_blank"><img src="files/effective-spaceship.jpg" alt="Диплом «Готово к продакшену»" loading="lazy"><span>Диплом «Готово к продакшену»</span></a>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Личные проекты</h2>
+  <div class="card">
+    <h3>Cubr — дуэли по спидкубингу, где судья — камера</h3>
+    <div class="links">
+      <a class="btn" href="https://cubr-game.ru" target="_blank">cubr-game.ru</a>
+      <a class="btn" href="https://github.com/babikovasofi/Cubr" target="_blank">GitHub</a>
+    </div>
+    <p>Веб-сервис для соревнований по сборке кубика Рубика. Игрок собирает кубик перед веб-камерой, браузер распознаёт грани и состояние кубика, ловит старт и стоп по рукам — так компьютерное зрение заменяет судью. Видео не уходит с устройства, на сервер отправляется только результат.</p>
+    <ul>
+      <li>Режимы: соло-тренировка, онлайн-дуэли с синхронным стартом, турнир недели, скрамбл дня, тренажёр на 78 случаев OLL/PLL.</li>
+      <li>Рейтинг-кубки с защитой от фарма, профиль с рекордами и бейджами, друзья и чат, интерфейс на RU/EN.</li>
+      <li><b>Стек:</b> React 19 + TypeScript + Vite, MediaPipe Hands и свои модули распознавания цвета; FastAPI + PostgreSQL; деплой на VPS в Docker, CI на GitHub Actions.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="hackathons">
+  <h2>Хакатоны</h2>
+
+  <div class="card">
+    <h3>КосмоХакатон «Кадры для космоса» <span class="badge">5 место</span></h3>
+    <p class="meta">11–13.09.2026 · Благовещенск, АмГУ</p>
+    <p>Окружной этап всероссийской серии хакатонов федерального проекта «Кадры для космоса» (6 этапов по России, финал в Москве, призовой фонд 7,2 млн ₽). Задачи космической отрасли. Команда заняла <b>5 место</b>.</p>
+    <p><b>Проект: HydroWatch Амур</b> — сервис оперативного мониторинга паводков на Амуре по спутниковым снимкам Sentinel-1 (радар) и Sentinel-2 (оптика). Команда: я и Иван Рябченко.</p>
+    <ul>
+      <li>Проблема: пик паводка приходит вместе с облаками, оптика бесполезна — перешли на радар, он видит сквозь облака.</li>
+      <li>ML-пайплайн: спекл-фильтр → адаптивный порог по тайлам → очистка (уклон, застройка, HAND) → маска затопления и площади в гектарах.</li>
+      <li>Метрика выросла с <b>0,43 до 0,60</b> при потолке 0,74; расчёт 11 пар за 29 с на обычном процессоре, без GPU.</li>
+      <li>Веб-интерфейс: карта со шторкой «до / пик», слои воды и сводный отчёт по району.</li>
+    </ul>
+    <p class="media-label">Презентация решения · <a href="files/kosmohackathon-presentation.pdf" target="_blank">открыть PDF</a></p>
+    <iframe class="pdf" src="files/kosmohackathon-presentation.pdf" loading="lazy" title="Презентация HydroWatch Амур"></iframe>
+  </div>
+
+  <div class="card">
+    <h3>Data Match <span class="badge">Финалист</span></h3>
+    <p class="meta">Осень 2026 · Омск · ХК «Авангард»</p>
+    <p>Первый хоккейный хакатон по аналитике данных в спорте на реальных данных ХК «Авангард». <b>Финалист технического трека</b> — прошла в финал из всех участников онлайн-этапа.</p>
+    <p><b>Проект:</b> прогноз спроса на билеты домашних матчей ХК «Авангард» по 8 ценовым зонам (команда из 2 человек, с Иваном Рябченко).</p>
+    <ul>
+      <li>Модель: оценка по истории + поправка на темп продаж + потолок заполнения; отдельная логика для праздничных матчей.</li>
+      <li>Проверка честным бэктестом: 51 временной срез, 5 848 пар «матч × зона».</li>
+      <li>Результат: ошибка (RMSE) на <b>17 % ниже</b> базового прогноза, а когда продажи уже идут — на <b>36 % ниже</b>.</li>
+      <li>Дали клубу рекомендации: что менять в продажах и какие данные собирать.</li>
+    </ul>
+    <p class="media-label">Презентация решения · <a href="files/datamatch-presentation.pdf" target="_blank">открыть PDF</a></p>
+    <iframe class="pdf" src="files/datamatch-presentation.pdf" loading="lazy" title="Презентация Data Match"></iframe>
+    <a class="proof" href="files/datamatch.jpg" target="_blank"><img src="files/datamatch.jpg" alt="Диплом финалиста Data Match" loading="lazy"><span>Диплом финалиста</span></a>
+  </div>
+
+  <div class="card">
+    <h3>НТ Марафон чемпионатов, BD/AI <span class="badge">Призёр</span></h3>
+    <p class="meta">2026 · Омск · при поддержке Губернатора Омской области</p>
+    <p>Чемпионат «Технологии больших данных и ИИ», кейс <b>«Управление подписками»</b>.</p>
+    <a class="proof" href="files/bdai.jpg" target="_blank"><img src="files/bdai.jpg" alt="Диплом призёра BD/AI" loading="lazy"><span>Диплом призёра</span></a>
+  </div>
+
+  <div class="card">
+    <h3>Хакатон «Проектирование пользовательского опыта в цифровых коммуникациях» <span class="badge">Победа</span></h3>
+    <p class="meta">27.05.2026 · Омск, ОмГТУ</p>
+    <p>I Региональный хакатон, номинация <b>«Лучший прототип интерфейса стартапа»</b>, команда «Лампочка».</p>
+    <a class="proof" href="files/ux-hackathon.jpg" target="_blank"><img src="files/ux-hackathon.jpg" alt="Диплом победителя" loading="lazy"><span>Диплом победителя</span></a>
+  </div>
+
+  <div class="card">
+    <h3>Цифровой хакатон ИТ-Кластера Сибири <span class="badge">Победа</span></h3>
+    <p class="meta">2026 · Омск, Международный ИТ-форум</p>
+    <p>Номинация <b>«Интересное бизнес-решение»</b>. Сделали веб-сайт для ассоциации «ИТ-Кластер Сибири».</p>
+    <a class="proof" href="files/it-cluster-hackathon.jpg" target="_blank"><img src="files/it-cluster-hackathon.jpg" alt="Диплом победителя" loading="lazy"><span>Диплом победителя</span></a>
+  </div>
+
+  <div class="card">
+    <h3>Хакатон «Цифровые технологии и автоматизация управления» <span class="badge">I место</span></h3>
+    <p class="meta">2026 · Омск, кафедра АСОИУ ОмГТУ · команда из 2 человек</p>
+    <a class="proof" href="files/asoiu-hackathon.jpg" target="_blank"><img src="files/asoiu-hackathon.jpg" alt="Диплом за I место" loading="lazy"><span>Диплом за I место</span></a>
+  </div>
+
+  <div class="card">
+    <h3>Открытое демо игр под ОС «Аврора» <span class="badge">Почётная грамота</span></h3>
+    <p class="meta">10.04.2026 · Омск · «Омская цифра»</p>
+    <p>Разработка проекта под российскую мобильную ОС Аврора.</p>
+    <a class="proof" href="files/avrora.jpg" target="_blank"><img src="files/avrora.jpg" alt="Почётная грамота" loading="lazy"><span>Почётная грамота</span></a>
+  </div>
+</section>
+
+<section id="science">
+  <h2>Наука</h2>
+  <div class="card">
+    <h3>Доклад на XVII Всероссийской НПК «Информационные технологии и автоматизация управления»</h3>
+    <p class="meta">12–14.05.2026 · ОмГТУ · форум «ИТ. Наука. Креатив»</p>
+    <p><b>«Сравнительный анализ RAG-систем на основе коммерческого API GigaChat и локальной модели Mistral 7B на доменных данных университета»</b>.</p>
+    <a class="proof" href="files/conference-rag.jpg" target="_blank"><img src="files/conference-rag.jpg" alt="Сертификат участника конференции" loading="lazy"><span>Сертификат участника</span></a>
+  </div>
+</section>
+
+<section id="activity">
+  <h2>Активность</h2>
+  <div class="card">
+    <p>Оргкоманда <a href="https://www.devfest.ru" target="_blank"><b>DevFest 2026</b></a> (одно из крупнейших ИТ-событий Омска) — готовила и вела интеллектуальную игру «Космические бои».</p>
+  </div>
+</section>
+
+<footer>София Бабикова · 2026</footer>
+</div>
+</body>
+</html>
